@@ -3,6 +3,7 @@ package com.cisc181.core;
 import java.util.Date;
 
 import com.cisc181.eNums.eTitle;
+import exceptions.PersonException;
 
 public class Staff extends Employee {
 
@@ -25,7 +26,7 @@ public class Staff extends Employee {
 	public Staff(String FirstName, String MiddleName, String LastName,
 			Date DOB, String Address, String Phone_number, String Email,
 			String officeHours, int rank, double salary, Date hireDate,
-			eTitle Title) 
+			eTitle Title) throws PersonException
 	
 	{
 		super(FirstName, MiddleName, LastName, DOB, Address, Phone_number,
